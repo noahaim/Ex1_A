@@ -4,59 +4,59 @@
 #include <stdexcept>
 using namespace std;
 
-TEST_CASE("check that the print of all the parts 1 is good")
+TEST_CASE("check snowman 11111111")
 {
     CHECK( ariel::snowman(11111111) == string("\n _===_ \n (.,.) \n<( : )>\n ( : ) \n"));
 }
-TEST_CASE("check that the print of hat is good")
+TEST_CASE("check the hat")
 {
     CHECK( ariel::snowman(21111111) == string("  ___  \n ..... \n (.,.) \n<( : )>\n ( : ) \n"));
     CHECK( ariel::snowman(31111111) == string("   _   \n  /_\\  \n (.,.) \n<( : )>\n ( : ) \n"));
     CHECK( ariel::snowman(41111111) == string("  ___  \n (_*_) \n (.,.) \n<( : )>\n ( : ) \n"));
 }
-TEST_CASE("check that the print of nose is good")
+TEST_CASE("check the nose")
 {
     CHECK( ariel::snowman(12111111) == string("\n _===_ \n (...) \n<( : )>\n ( : ) \n"));
     CHECK( ariel::snowman(13111111) == string("\n _===_ \n (._.) \n<( : )>\n ( : ) \n"));
     CHECK( ariel::snowman(14111111) == string("\n _===_ \n (. .) \n<( : )>\n ( : ) \n"));
 }
-TEST_CASE("check that the print of Left Eye is good")
+TEST_CASE("check the Left Eye")
 {
     CHECK( ariel::snowman(11211111) == string("\n _===_ \n (o,.) \n<( : )>\n ( : ) \n"));
     CHECK( ariel::snowman(11311111) == string("\n _===_ \n (O,.) \n<( : )>\n ( : ) \n"));
     CHECK( ariel::snowman(11411111) == string("\n _===_ \n (-,.) \n<( : )>\n ( : ) \n"));
 }
-TEST_CASE("check that the print of Right Eye is good")
+TEST_CASE("check the Right Eye")
 {
     CHECK( ariel::snowman(11121111) == string("\n _===_ \n (.,o) \n<( : )>\n ( : ) \n"));
     CHECK( ariel::snowman(11131111) == string("\n _===_ \n (.,O) \n<( : )>\n ( : ) \n"));
     CHECK( ariel::snowman(11141111) == string("\n _===_ \n (.,-) \n<( : )>\n ( : ) \n"));
 }
-TEST_CASE("check that the print of Left Arm is good")
+TEST_CASE("check  the Left Arm")
 {
     CHECK( ariel::snowman(11112111) == string("\n _===_ \n\\(.,.) \n ( : )>\n ( : ) \n"));
     CHECK( ariel::snowman(11113111) == string("\n _===_ \n (.,.) \n/( : )>\n ( : ) \n"));
     CHECK( ariel::snowman(11114111) == string("\n _===_ \n (.,.) \n ( : )>\n ( : ) \n"));
 }
-TEST_CASE("check that the print of Right Arm is good")
+TEST_CASE("check the Right Arm")
 {
     CHECK( ariel::snowman(11111211) == string("\n _===_ \n (.,.)/\n<( : ) \n ( : ) \n"));
     CHECK( ariel::snowman(11111311) == string("\n _===_ \n (.,.) \n<( : )\\\n ( : ) \n"));
     CHECK( ariel::snowman(11111411) == string("\n _===_ \n (.,.) \n<( : ) \n ( : ) \n"));
 }
-TEST_CASE("check that the print of Torso is good")
+TEST_CASE("check the Torso")
 {
     CHECK( ariel::snowman(11111121) == string("\n _===_ \n (.,.) \n<(] [)>\n ( : ) \n"));
     CHECK( ariel::snowman(11111131) == string("\n _===_ \n (.,.) \n<(> <)>\n ( : ) \n"));
     CHECK( ariel::snowman(11111141) == string("\n _===_ \n (.,.) \n<(   )>\n ( : ) \n"));
 }
-TEST_CASE("check that the print of Base is good")
+TEST_CASE("check the Base")
 {
     CHECK( ariel::snowman(11111112) == string("\n _===_ \n (.,.) \n<( : )>\n (\" \") \n"));
     CHECK( ariel::snowman(11111113) == string("\n _===_ \n (.,.) \n<( : )>\n (___) \n"));
     CHECK( ariel::snowman(11111114) == string("\n _===_ \n (.,.) \n<( : )>\n (   ) \n"));
 }
-TEST_CASE("Check out types of snowmen")
+TEST_CASE("Check some snowmens")
 {
     CHECK( ariel::snowman(11114411) == string("\n _===_ \n (.,.) \n ( : ) \n ( : ) \n"));
     CHECK( ariel::snowman(33232124) == string("   _   \n  /_\\  \n\\(o_O) \n (] [)>\n (   ) \n"));
